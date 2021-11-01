@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module>
-    <inherits name='com.google.gwt.user.User' />
-    <inherits name="gwt.interop.utils.InteropUtils" />
-    <inherits name="elemental2.dom.Dom"/>
-    <inherits name="elemental2.core.Core"/>
+    <inherits name="gwt.react.ReactNoScripts" />
 
-    <source path='client' />
-    <source path='shared' />
+    <script src="scripts/16/react.production.min.js"/>
+    <script src="scripts/16/react-dom.production.min.js"/>
 </module>
