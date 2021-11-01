@@ -50,8 +50,8 @@ Stateless components can be defined using lambdas e.g.
 ```java
     public class SomeClass {
         public static StatelessComponent<BaseProps> someComponent = props -> 
-            div(null, 
-                span(null, "Some text")
+            div( 
+                span("Some text")
             );
     }
     
@@ -64,8 +64,8 @@ Stateless components can be defined using lambdas e.g.
 ```java
     public class SomeClass {
         public static DOMElement<HtmlProps> someComponent(BaseProps props) {
-            return div(null, 
-                span(null, "Some text")
+            return div( 
+                span("Some text")
             );
         };
     }

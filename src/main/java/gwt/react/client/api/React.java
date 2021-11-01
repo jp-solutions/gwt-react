@@ -180,6 +180,8 @@ public class React {
 		@JsOverlay public static ReactElement col(ColProps props, ReactElement ...child) { return  createElement("col", props, child); }
 		@JsOverlay public static ReactElement colgroup(HtmlProps props, ReactElement ...child) { return  createElement("col", props, child); }
 
+		@JsOverlay public static ReactElement div(String value) { return  createElement("div", null, value); }
+		@JsOverlay public static ReactElement div(ReactElement ...child) { return  createElement("div", null, child); }
 		@JsOverlay public static ReactElement div(HtmlProps props, String value) { return  createElement("div", props, value); }
 		@JsOverlay public static ReactElement div(HtmlProps props, ReactElement ...child) { return  createElement("div", props, child); }
 
@@ -189,6 +191,12 @@ public class React {
 
 		@JsOverlay public static ReactElement header(HtmlProps props, ReactElement ...child) { return  createElement("header", props, child); }
 
+		@JsOverlay public static ReactElement h1(String value) { return  createElement("h1", null, value); }
+		@JsOverlay public static ReactElement h2(String value) { return  createElement("h2", null, value); }
+		@JsOverlay public static ReactElement h3(String value) { return  createElement("h3", null, value); }
+		@JsOverlay public static ReactElement h4(String value) { return  createElement("h4", null, value); }
+		@JsOverlay public static ReactElement h5(String value) { return  createElement("h5", null, value); }
+		@JsOverlay public static ReactElement h6(String value) { return  createElement("h6", null, value); }
 		@JsOverlay public static ReactElement h1(HtmlProps props, String value) { return  createElement("h1", props, value); }
 		@JsOverlay public static ReactElement h2(HtmlProps props, String value) { return  createElement("h2", props, value); }
 		@JsOverlay public static ReactElement h3(HtmlProps props, String value) { return  createElement("h3", props, value); }
@@ -215,6 +223,8 @@ public class React {
 		@JsOverlay public static ReactElement p(HtmlProps props, String value) { return createElement("p", props, value); }
 		@JsOverlay public static ReactElement p(HtmlProps props, ReactElement ...child) { return  createElement("p", props, child); }
 
+		@JsOverlay public static ReactElement span(String value) { return  createElement("span", null, value); }
+		@JsOverlay public static ReactElement span(ReactElement child) { return  createElement("span", null, child); }
 		@JsOverlay public static ReactElement span(HtmlProps props, String value) { return  createElement("span", props, value); }
 		@JsOverlay public static ReactElement span(HtmlProps props, ReactElement child) { return  createElement("span", props, child); }
 		@JsOverlay public static ReactElement span(HtmlProps props, ReactElement child, String value) { return  createElement("span", props, child, value); }
