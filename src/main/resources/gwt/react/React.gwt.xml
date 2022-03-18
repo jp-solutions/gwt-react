@@ -2,6 +2,6 @@
 <module>
     <inherits name="gwt.react.ReactNoScripts" />
 
-    <script src="scripts/16/react.production.min.js"/>
-    <script src="scripts/16/react-dom.production.min.js"/>
+<!--    <script src="scripts/16/react.production.min.js"/>-->
+<!--    <script src="scripts/16/react-dom.production.min.js"/>-->
 </module>
