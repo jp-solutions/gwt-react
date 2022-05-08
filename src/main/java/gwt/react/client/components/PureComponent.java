@@ -21,7 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. */
 
-import gwt.interop.utils.client.plainobjects.JsPlainObj;
+import elemental2.core.JsObject;
 import gwt.react.client.api.React;
 import gwt.react.client.components.lifecycle.ComponentDidMount;
 import gwt.react.client.components.lifecycle.ComponentDidUpdate;
@@ -37,7 +37,7 @@ import jsinterop.annotations.JsType;
 /**
  * <p>You can subclass {@link PureComponent} to define a stateful, but pure ES6-style React component</p>
  *
- * <p>{@link PureComponent} is exactly like {@link Component} but acts as if {@link ShouldComponentUpdate#shouldComponentUpdate(BaseProps, JsPlainObj)} 
+ * <p>{@link PureComponent} is exactly like {@link Component} but acts as if {@link ShouldComponentUpdate#shouldComponentUpdate(BaseProps, JsObject)}
  * was automatically implemented for you, with a shallow prop and state comparison.
  *
  * If your React component's {@link Component#render()} function renders the same result given the same props and state, you can use {@link PureComponent}
@@ -76,7 +76,7 @@ import jsinterop.annotations.JsType;
  * @param <S> the type of state this component maintains
  */
 @JsType(isNative = true, namespace = "React", name = "PureComponent")
-public abstract class PureComponent<P extends BaseProps, S extends JsPlainObj> extends Component<P,S>{
+public abstract class PureComponent<P extends BaseProps, S extends JsObject> extends Component<P,S>{
 
     public PureComponent(P props) {
         super(props);

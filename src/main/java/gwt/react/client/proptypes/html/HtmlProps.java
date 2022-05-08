@@ -13,7 +13,6 @@ import jsinterop.annotations.JsType;
 public class HtmlProps extends HtmlGlobalFields {
 
     //React Specific
-
     @JsOverlay public final HtmlProps dangerouslySetInnerHTML(String s) { setDangerouslyInnerHTML(s); return this; }
     @Deprecated @JsOverlay public final HtmlProps ref(String s) { ref = s; return this; }
     @JsOverlay public final HtmlProps ref(ReactRefCallback callback) { ref = callback; return this; }

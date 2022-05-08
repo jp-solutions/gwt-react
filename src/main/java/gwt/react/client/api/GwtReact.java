@@ -21,7 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. */
 
-import gwt.interop.utils.shared.collections.Array;
+import elemental2.core.JsArray;
 import gwt.react.client.elements.ReactElement;
 import gwt.react.client.elements.ReactElementChildren;
 import jsinterop.base.Js;
@@ -35,7 +35,7 @@ public class GwtReact {
 
     //The following methods are used to work around limitations in the Java type system when
     //creating React Elements
-    public static ReactElement castAsReactElement(Array<? extends ReactElement> children) {
+    public static ReactElement castAsReactElement(JsArray<? extends ReactElement> children) {
     	return Js.uncheckedCast(children);
     }
 

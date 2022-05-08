@@ -21,17 +21,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. */
 
-import gwt.interop.utils.client.plainobjects.JsPlainObj;
-import gwt.interop.utils.shared.collections.StringMap;
-import gwt.interop.utils.shared.functional.JsRunnable;
+import elemental2.core.JsMap;
+import elemental2.core.JsObject;
+import gwt.interop.utils.functional.JsRunnable;
 import gwt.react.client.api.React;
-import gwt.react.client.components.lifecycle.ComponentDidMount;
-import gwt.react.client.components.lifecycle.ComponentDidUpdate;
-import gwt.react.client.components.lifecycle.ComponentWillMount;
-import gwt.react.client.components.lifecycle.ComponentWillReceiveProps;
-import gwt.react.client.components.lifecycle.ComponentWillUnmount;
-import gwt.react.client.components.lifecycle.ComponentWillUpdate;
-import gwt.react.client.components.lifecycle.ShouldComponentUpdate;
+import gwt.react.client.components.lifecycle.*;
 import gwt.react.client.elements.ReactElement;
 import gwt.react.client.proptypes.BaseProps;
 import jsinterop.annotations.JsMethod;
@@ -58,21 +52,21 @@ import jsinterop.annotations.JsType;
  * void componentDidUpdate(P prevProps, S prevState)
  * void componentWillUnmount()
  * </Pre>
- * 
+ *
  * <p>To have extra type safety when defining some of the above methods, you can implement one or more of the following interfaces:</p>
- * <p>{@link ComponentWillMount}</p> 
- * <p>{@link ComponentDidMount}</p> 
+ * <p>{@link ComponentWillMount}</p>
+ * <p>{@link ComponentDidMount}</p>
  * <p>{@link ComponentWillReceiveProps}</p>
  * <p>{@link ShouldComponentUpdate}</p>
  * <p>{@link ComponentWillUpdate}</p>
  * <p>{@link ComponentDidUpdate}</p>
  * <p>{@link ComponentWillUnmount}</p>
- * 
+ *
  * @param <P> the type of props this component expects
  * @param <S> the type of state this component maintains
  */
 @JsType(isNative = true, namespace = "React", name = "Component")
-public abstract class Component<P extends BaseProps, S extends JsPlainObj> {
+public abstract class Component<P extends BaseProps, S extends JsObject> {
 	@JsProperty
 	protected S state;
 
@@ -80,7 +74,7 @@ public abstract class Component<P extends BaseProps, S extends JsPlainObj> {
 	protected P props;
 
 	@JsProperty
-	protected StringMap<Object> refs;
+	protected JsMap<String, Object> refs;
 
 	private Component() {}
 

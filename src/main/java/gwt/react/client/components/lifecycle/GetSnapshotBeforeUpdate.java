@@ -21,7 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. */
 
-import gwt.interop.utils.client.plainobjects.JsPlainObj;
+import elemental2.core.JsObject;
 import gwt.react.client.components.Component;
 import gwt.react.client.components.PureComponent;
 import gwt.react.client.proptypes.BaseProps;
@@ -32,14 +32,14 @@ import jsinterop.annotations.JsType;
  * Implement this interface when using {@link Component} or {@link PureComponent} to receive the {@link #getSnapshotBeforeUpdate(P,S)} lifecycle event.
  */
 @JsType
-public interface GetSnapshotBeforeUpdate<P extends BaseProps, S extends JsPlainObj> {
+public interface GetSnapshotBeforeUpdate<P extends BaseProps, S extends JsObject> {
 	/**
 	 * The new getSnapshotBeforeUpdate lifecycle is called right before mutations are made (e.g. before the DOM is updated).
 	 * The return value for this lifecycle will be passed as the third parameter to componentDidUpdate.
 	 * (This lifecycle isn't often needed, but can be useful in cases like manually preserving scroll position during rerenders.)
      *
 	 * Together with componentDidUpdate, this new lifecycle should cover all use cases for the legacy componentWillUpdate.
-	 * 
+	 *
 	 * @param prevProps
 	 * @param prevState
 	 * @return The new snapshot value or null

@@ -21,7 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. */
 
-import gwt.interop.utils.shared.functional.JsRunnable;
+import gwt.interop.utils.functional.JsRunnable;
 import gwt.react.client.elements.ReactElement;
 import jsinterop.annotations.JsPackage;
 import jsinterop.annotations.JsType;
@@ -33,7 +33,7 @@ public class ReactDOM {
      */
 	private ReactDOM() {
 	}
-	
+
     /**
      * <p>Render a ReactElement&lt;?, ?&gt; into the DOM in the supplied container and return a reference to
      * the component (or returns nothing for stateless components).</p>

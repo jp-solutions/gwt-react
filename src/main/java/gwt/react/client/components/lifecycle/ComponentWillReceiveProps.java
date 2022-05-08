@@ -21,7 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. */
 
-import gwt.interop.utils.client.plainobjects.JsPlainObj;
+import elemental2.core.JsObject;
 import gwt.react.client.components.Component;
 import gwt.react.client.components.PureComponent;
 import gwt.react.client.proptypes.BaseProps;
@@ -35,15 +35,15 @@ import jsinterop.annotations.JsType;
 @JsType
 public interface ComponentWillReceiveProps<P extends BaseProps> {
 	/**
-	 * {@link #componentWillReceiveProps(BaseProps)} is invoked before a mounted component receives new props. 
-	 * If you need to update the state in response to prop changes (for example, to reset it), you may compare 
-	 * this.props and nextProps and perform state transitions using {@link Component#setState(JsPlainObj)} in this method.
-	 * Note that React may call this method even if the props have not changed, so make sure to compare the current 
+	 * {@link #componentWillReceiveProps(BaseProps)} is invoked before a mounted component receives new props.
+	 * If you need to update the state in response to prop changes (for example, to reset it), you may compare
+	 * this.props and nextProps and perform state transitions using {@link Component#setState(JsObject)} in this method.
+	 * Note that React may call this method even if the props have not changed, so make sure to compare the current
 	 * and next values if you only want to handle changes. This may occur when the parent component causes your component to re-render.
-	 * React doesn't call {@link #componentWillReceiveProps(BaseProps)} with initial props during mounting. It only calls this method 
-	 * if some of component's props may update. Calling {@link Component#setState(JsPlainObj)} generally doesn't trigger
+	 * React doesn't call {@link #componentWillReceiveProps(BaseProps)} with initial props during mounting. It only calls this method
+	 * if some of component's props may update. Calling {@link Component#setState(JsObject)} generally doesn't trigger
 	 * {@link #componentWillReceiveProps(BaseProps)}
-	 * 
+	 *
 	 * @param nextProps
 	 */
 	@JsMethod

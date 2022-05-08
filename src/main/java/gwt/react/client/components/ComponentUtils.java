@@ -1,6 +1,6 @@
 package gwt.react.client.components;
 
-import gwt.interop.utils.client.plainobjects.JsPlainObj;
+import elemental2.core.JsObject;
 import gwt.react.client.proptypes.BaseProps;
 
 /**
@@ -18,7 +18,7 @@ public class ComponentUtils {
      * @param <T> The type of {@link Component}
      * @return The constructor function
      */
-    public static native <P extends BaseProps, S extends JsPlainObj, T extends Component<P, S>> ComponentConstructorFn<P> getCtorFn(Class<T> cls) /*-{
+    public static native <P extends BaseProps, S extends JsObject, T extends Component<P, S>> ComponentConstructorFn<P> getCtorFn(Class<T> cls) /*-{
         return cls.@java.lang.Class::jsConstructor;
     }-*/;
 }

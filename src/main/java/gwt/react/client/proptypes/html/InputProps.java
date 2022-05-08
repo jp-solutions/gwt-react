@@ -9,6 +9,7 @@ import gwt.react.client.proptypes.html.attributeTypes.OnOff;
 import gwt.react.client.proptypes.html.attributeTypes.YesNo;
 import jsinterop.annotations.JsOverlay;
 import jsinterop.annotations.JsPackage;
+import jsinterop.annotations.JsProperty;
 import jsinterop.annotations.JsType;
 
 /**
@@ -84,6 +85,7 @@ public class InputProps extends HtmlGlobalFields {
 
     // Form Events
     @JsOverlay public final InputProps onChange(FormEventHandler handler) { onChange = handler; return this; }
+    @JsOverlay public final InputProps onInput(FormEventHandler handler) { onInput = handler; return this; }
 
     // Keyboard Events
     @JsOverlay public final InputProps onKeyDown(KeyboardEventHandler handler) { onKeyDown = handler; return this; }

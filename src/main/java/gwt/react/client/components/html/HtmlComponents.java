@@ -2,6 +2,7 @@ package gwt.react.client.components.html;
 
 import gwt.react.client.elements.ReactElement;
 import gwt.react.client.proptypes.FragmentProps;
+import gwt.react.client.proptypes.SuspenseProps;
 import gwt.react.client.proptypes.html.*;
 
 import static gwt.react.client.api.React.*;
@@ -17,6 +18,9 @@ public final class HtmlComponents {
     public static ReactElement fragment(ReactElement ...child) { return  createElement(Fragment, null, child); }
 
     public static ReactElement strictMode(ReactElement ...child) { return  createElement(StrictMode, null, child); }
+
+    public static ReactElement suspense(ReactElement ...child) { return  createElement(Suspense, null, child); }
+    public static ReactElement suspense(SuspenseProps props, ReactElement ...child) { return  createElement(Suspense, props, child); }
 
     public static ReactElement a(AnchorProps props, String value) { return  createElement("a", props, value); }
     public static ReactElement a(AnchorProps props, ReactElement ...child) { return  createElement("a", props, child); }
@@ -41,6 +45,16 @@ public final class HtmlComponents {
     public static ReactElement caption(HtmlProps props, ReactElement ...child) { return  createElement("caption", props, child); }
     public static ReactElement caption(ReactElement ...child) { return  createElement("caption", null, child); }
 
+    public static ReactElement code(String value) { return  createElement("code", null, value); }
+    public static ReactElement code(HtmlProps props, String value) { return  createElement("code", props, value); }
+    public static ReactElement code(HtmlProps props, ReactElement ...child) { return  createElement("code", props, child); }
+    public static ReactElement code(ReactElement ...child) { return  createElement("code", null, child); }
+
+    public static ReactElement pre(String...value) { return  createElement("pre", null, value); }
+    public static ReactElement pre(HtmlProps props, String value) { return  createElement("pre", props, value); }
+    public static ReactElement pre(HtmlProps props, ReactElement ...child) { return  createElement("pre", props, child); }
+    public static ReactElement pre(ReactElement ...child) { return  createElement("pre", null, child); }
+
     public static ReactElement col(String value) { return  createElement("col", null, value); }
     public static ReactElement col(ReactElement ...child) { return  createElement("col", null, child); }
     public static ReactElement col(ColProps props, ReactElement ...child) { return  createElement("col", props, child); }
@@ -50,6 +64,16 @@ public final class HtmlComponents {
     public static ReactElement div(ReactElement ...child) { return  createElement("div", null, child); }
     public static ReactElement div(HtmlProps props, String value) { return  createElement("div", props, value); }
     public static ReactElement div(HtmlProps props, ReactElement ...child) { return  createElement("div", props, child); }
+
+    public static ReactElement main(String value) { return  createElement("main", null, value); }
+    public static ReactElement main(ReactElement ...child) { return  createElement("main", null, child); }
+    public static ReactElement main(HtmlProps props, String value) { return  createElement("main", props, value); }
+    public static ReactElement main(HtmlProps props, ReactElement ...child) { return  createElement("main", props, child); }
+
+    public static ReactElement nav(String value) { return  createElement("nav", null, value); }
+    public static ReactElement nav(ReactElement ...child) { return  createElement("nav", null, child); }
+    public static ReactElement nav(HtmlProps props, String value) { return  createElement("nav", props, value); }
+    public static ReactElement nav(HtmlProps props, ReactElement ...child) { return  createElement("nav", props, child); }
 
     public static ReactElement footer(String value) { return  createElement("footer", null, value); }
     public static ReactElement footer(HtmlProps props, String value) { return  createElement("footer", props, value); }

@@ -21,14 +21,16 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. */
 
-import gwt.interop.utils.client.plainobjects.JsPlainObj;
-import gwt.interop.utils.shared.collections.Array;
+import elemental2.core.JsArray;
+import elemental2.core.JsObject;
+import elemental2.promise.Promise;
+import gwt.interop.utils.functional.JsSupplier;
 import gwt.react.client.components.*;
 import gwt.react.client.elements.ReactElement;
 import gwt.react.client.elements.ReactElementChildren;
 import gwt.react.client.proptypes.BaseProps;
-import gwt.react.client.proptypes.FragmentProps;
-import gwt.react.client.proptypes.html.*;
+import gwt.react.client.proptypes.SuspenseProps;
+import gwt.react.client.proptypes.html.HtmlGlobalFields;
 import jsinterop.annotations.JsOverlay;
 import jsinterop.annotations.JsPackage;
 import jsinterop.annotations.JsProperty;
@@ -50,9 +52,8 @@ public class React {
 	 */
 	public static native <P extends HtmlGlobalFields> ReactElement createElement(String type);
 	public static native <P extends HtmlGlobalFields> ReactElement createElement(String type, P props);
-	public static native <P extends HtmlGlobalFields> ReactElement createElement(String type, P props, String value);
+	public static native <P extends HtmlGlobalFields> ReactElement createElement(String type, P props, String...value);
 	public static native <P extends HtmlGlobalFields> ReactElement createElement(String type, P props, ReactElement ...children);
-	public static native <P extends HtmlGlobalFields> ReactElement createElement(String type, P props, ReactElement child, String value);
 
 	/**
 	 * Create and return a new ReactElement of the given StatelessComponent.
@@ -82,20 +83,25 @@ public class React {
 	 * @return a {@link ReactElement}
 	 */
 	@JsOverlay
-	public static <P extends BaseProps, S extends JsPlainObj, T extends Component<P, S>> ReactElement createElement(Class<T> type, P props) {
+	public static <P extends BaseProps, S extends JsObject, T extends Component<P, S>> ReactElement createElement(Class<T> type, P props) {
 		return createElement(ComponentUtils.getCtorFn(type), props);
+	}
+	@JsOverlay
+	public static <P extends BaseProps, S extends JsObject, T extends Component<P, S>> ReactElement createElement(Class<T> type) {
+		return createElement(ComponentUtils.getCtorFn(type));
 	}
 
 	@JsOverlay
-	public static <P extends BaseProps, S extends JsPlainObj, T extends Component<P, S>> ReactElement createElement(Class<T> type, P props, String value) {
+	public static <P extends BaseProps, S extends JsObject, T extends Component<P, S>> ReactElement createElement(Class<T> type, P props, String value) {
 		return createElement(ComponentUtils.getCtorFn(type), props, value);
 	}
 
 	@JsOverlay
-	public static <P extends BaseProps, S extends JsPlainObj, T extends Component<P, S>> ReactElement createElement(Class<T> type, P props, ReactElement ...child) {
+	public static <P extends BaseProps, S extends JsObject, T extends Component<P, S>> ReactElement createElement(Class<T> type, P props, ReactElement ...child) {
 		return createElement(ComponentUtils.getCtorFn(type), props, child);
 	}
 
+	public static native <P extends BaseProps> ReactElement createElement(ComponentConstructorFn<P> type);
 	public static native <P extends BaseProps> ReactElement createElement(ComponentConstructorFn<P> type, P props);
 	public static native <P extends BaseProps> ReactElement createElement(ComponentConstructorFn<P> type, P props, String value);
     public static native <P extends BaseProps> ReactElement createElement(ComponentConstructorFn<P> type, P props, ReactElement ...children);
@@ -105,6 +111,12 @@ public class React {
 
 	@JsProperty
 	public static ComponentConstructorFn<BaseProps> StrictMode;
+
+	@JsProperty
+	public static ComponentConstructorFn<BaseProps> Profiler;
+
+	@JsProperty
+	public static ComponentConstructorFn<SuspenseProps> Suspense;
 
 	/**
 	 * <p>Clone and return a new ReactElement using element as the starting point. The resulting
@@ -117,9 +129,11 @@ public class React {
 	 * @param props the props to merge
 	 * @return the cloned element
 	 */
-	public static native ReactElement cloneElement(ReactElement element, JsPlainObj props);
+	public static native ReactElement cloneElement(ReactElement element, JsObject props);
 
 	public static native boolean isValidElement(Object object);
+
+	public static native <P extends BaseProps> ComponentConstructorFn<P> lazy(JsSupplier<Promise<ComponentConstructorFn<P>>> componentSupplier);
 
 	/**
 	 * Create a reference to hold a reference to either a DOM node or React Element
@@ -140,20 +154,6 @@ public class React {
 	 */
 	public static native <T, P extends BaseProps> ForwardRefCallback<T> forwardRef(P props, ReactRef<T> ref);
 
-	/**
-	 * React.DOM provides convenience wrappers around React.createElement for DOM components.
-	 * For example React.DOM.div(null, 'Hello World!')
-	 */
-	@JsType(isNative = true)
-	public static class DOM {
-		/**
-		 * This is a static class.
-		 */
-		private DOM() {
-		}
-
-
-	}
 
 	/**
 	 * React.Children provides utilities for dealing with the this.props.children opaque data
@@ -176,7 +176,7 @@ public class React {
 		 * @param Fn The function to execute
 		 * @return An Array of child ReactElements
 		 */
-		public static native Array<ReactElement> map(ReactElementChildren children, ChildrenMapFn Fn); // Object thisArg);
+		public static native JsArray<ReactElement> map(ReactElementChildren children, ChildrenMapFn Fn); // Object thisArg);
 
 		/**
 		 * Like React.Children.map() but does not return an array.
@@ -210,8 +210,8 @@ public class React {
 		 * it down.
 		 *
 		 * @param children The opaque children structure to iterate over
-		 * @return a {@link Array} of {@link ReactElement}
+		 * @return a {@link JsArray} of {@link ReactElement}
 		 */
-		public static native Array<ReactElement> toArray(ReactElementChildren children);
+		public static native JsArray<ReactElement> toArray(ReactElementChildren children);
 	}
 }

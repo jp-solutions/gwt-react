@@ -1,6 +1,6 @@
 package gwt.react.client.proptypes.html;
 
-import gwt.interop.utils.client.plainobjects.JsPlainObj;
+import gwt.interop.utils.plainobjects.JsPlainObj;
 import gwt.react.client.proptypes.html.cssPropertyTypes.AnimationFillMode;
 import gwt.react.client.proptypes.html.cssPropertyTypes.Visibility;
 import jsinterop.annotations.JsOverlay;
@@ -18,7 +18,7 @@ import jsinterop.annotations.JsType;
 public class CssProps extends JsPlainObj {
 
     @JsProperty public String animationFillMode;
-    
+
 
     @JsOverlay public final CssProps animationFillMode(AnimationFillMode mode) {
         animationFillMode = mode.name();
@@ -26,15 +26,15 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String backgroundColor;
-    
+
     @JsOverlay public final CssProps backgroundColor(String s) {
         backgroundColor = s;
         return this;
     }
 
     @JsProperty public int boxFlex;
-    
-    
+
+
 
     @JsOverlay public final CssProps boxFlex(int i) {
         boxFlex = i;
@@ -42,7 +42,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public int boxFlexGroup;
-    
+
 
     @JsOverlay public final CssProps boxFlexGroup(int i) {
         boxFlexGroup = i;
@@ -50,7 +50,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public int columnCount;
-    
+
 
     @JsOverlay public final CssProps columnCount(int i) {
         columnCount = i;
@@ -58,7 +58,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String flex;
-    
+
 
     @JsOverlay public final CssProps flex(int i) {
         flex = Integer.toString(i);
@@ -71,7 +71,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public int flexGrow;
-    
+
 
     @JsOverlay public final CssProps flexGrow(int i) {
         flexGrow = i;
@@ -79,7 +79,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public int flexShrink;
-    
+
 
     @JsOverlay public final CssProps flexShrink(int i) {
         flexShrink = i;
@@ -87,7 +87,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public double fontWeight;
-    
+
 
     @JsOverlay public final CssProps fontWeight(double d) {
         fontWeight = d;
@@ -95,7 +95,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public double lineClamp;
-    
+
 
     @JsOverlay public final CssProps lineClamp(double d) {
         lineClamp = d;
@@ -103,7 +103,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String lineHeight;
-    
+
 
     @JsOverlay public final CssProps lineHeight(String s) {
         lineHeight = s;
@@ -111,7 +111,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public double opacity;
-    
+
 
     @JsOverlay public final CssProps opacity(double d) {
         opacity = d;
@@ -119,14 +119,14 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public int order;
-    
+
 
     @JsOverlay public final CssProps order(int i) {
         order = i;
         return this;
     }
     @JsProperty public int orphans;
-    
+
 
     @JsOverlay public final CssProps orphans(int i) {
         orphans = i;
@@ -134,7 +134,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public int widows;
-    
+
 
     @JsOverlay public final CssProps widows(int i) {
         widows = i;
@@ -142,7 +142,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public double zIndex;
-    
+
 
     @JsOverlay public final CssProps zIndex(double d) {
         zIndex = d;
@@ -150,7 +150,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public double zoom;
-    
+
 
     @JsOverlay public final CssProps zoom(double d) {
         zoom = d;
@@ -158,7 +158,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String fontSize;
-    
+
 
     @JsOverlay public final CssProps fontSize(String s) {
         fontSize = s;
@@ -168,7 +168,7 @@ public class CssProps extends JsPlainObj {
     // SVG-related properties
 
     @JsProperty public double fillOpacity;
-    
+
 
     @JsOverlay public final CssProps fillOpacity(double d) {
         fillOpacity = d;
@@ -176,7 +176,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String stroke;
-    
+
 
     @JsOverlay public final CssProps stroke(String s) {
         stroke = s;
@@ -184,7 +184,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public double strokeOpacity;
-    
+
 
     @JsOverlay public final CssProps strokeOpacity(double d) {
         strokeOpacity = d;
@@ -192,7 +192,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String strokeWidth;
-    
+
 
     @JsOverlay public final CssProps strokeWidth(String s) {
         strokeWidth = s;
@@ -200,7 +200,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String alignContent;
-    
+
 
     /**
      * Aligns a flex container's lines within the flex container when there is extra space in the
@@ -211,7 +211,7 @@ public class CssProps extends JsPlainObj {
         return this;
     }
     @JsProperty public String alignItems;
-    
+
 
     /**
      * Sets the default alignment in the cross axis for all of the flex container's items,
@@ -224,7 +224,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String alignSelf;
-    
+
 
     /**
      * Allows the default alignment to be overridden for individual flex items.
@@ -235,7 +235,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String alignmentAdjust;
-    
+
 
     /**
      * This property allows precise alignment of elements, such as graphics, that do not have a
@@ -250,14 +250,14 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String alignmentBaseline;
-    
+
     @JsOverlay public final CssProps alignmentBaseline(String s) {
         alignmentBaseline = s;
         return this;
     }
 
     @JsProperty public String animationDelay;
-    
+
 
     /**
      * Defines a length of time to elapse before an animation starts, allowing an animation to
@@ -269,7 +269,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String animationDirection;
-    
+
 
     /*
      * Defines whether an animation should run in reverse on some or all cycles.
@@ -280,7 +280,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String animationIterationCount;
-    
+
 
     /**
      * Specifies how many times an animation cycle should play.
@@ -291,7 +291,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String animationName;
-    
+
 
     /**
      * Defines the list of animations that apply to the element.
@@ -302,7 +302,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String animationPlayState;
-    
+
 
     /**
      * Defines whether an animation is running or paused.
@@ -313,7 +313,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String appearance;
-    
+
 
     /**
      * Allows changing the style of any element to platform-based interface elements or vice versa.
@@ -324,7 +324,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String backfaceVisibility;
-    
+
 
     /**
      * Determines whether or not the "back" side of a transformed element is visible when facing
@@ -336,7 +336,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String backgroundBlendMode;
-    
+
 
     /**
      * This property describes how the element's background images should blend with each other
@@ -352,7 +352,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String backgroundComposite;
-    
+
 
     @JsOverlay public final CssProps backgroundComposite(String s) {
         backgroundComposite = s;
@@ -360,7 +360,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String backgroundImage;
-    
+
 
     /**
      * Applies one or more background images to an element. These can be any valid CSS image,
@@ -372,7 +372,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String backgroundOrigin;
-    
+
 
     /**
      * Specifies what the background-position property is relative to.
@@ -383,7 +383,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String backgroundPositionX;
-    
+
 
     /**
      * Sets the horizontal position of a background image.
@@ -394,7 +394,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String backgroundRepeat;
-    
+
 
     /**
      * Background-repeat defines if and how background images will be repeated after they have
@@ -406,7 +406,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String border;
-    
+
 
     /**
      * Shorthand property that defines the different properties of all four sides of an element's
@@ -419,7 +419,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderBottomLeftRadius;
-    
+
 
     /**
      * Defines the shape of the border of the bottom-left corner.
@@ -430,7 +430,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderBottomRightRadius;
-    
+
 
     /**
      * Defines the shape of the border of the bottom-right corner.
@@ -441,7 +441,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderBottomWidth;
-    
+
 
     /**
      * Sets the width of an element's bottom border. To set all four borders, use the border-width
@@ -454,7 +454,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderCollapse;
-    
+
 
     /**
      * Border-collapse can be used for collapsing the borders between table cells
@@ -465,7 +465,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderColor;
-    
+
 
     /**
      * The CSS border-color property sets the color of an element's four borders. This property can
@@ -485,7 +485,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderCornerShape;
-    
+
 
     /**
      * Specifies different corner clipping effects, such as scoop (inner curves), bevel (straight
@@ -498,7 +498,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderImageSource;
-    
+
 
     /**
      * The property border-image-source is used to set the image to be used instead of the border
@@ -510,7 +510,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderImageWidth;
-    
+
 
     /**
      * The border-image-width CSS property defines the offset to use for dividing the border image
@@ -524,7 +524,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderLeft;
-    
+
 
     /**
      * Shorthand property that defines the border-width, border-style and border-color of an
@@ -538,7 +538,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderLeftColor;
-    
+
 
     /**
      * The CSS border-left-color property sets the color of an element's left border. This page
@@ -552,7 +552,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderLeftStyle;
-    
+
 
     /**
      * Sets the style of an element's left border. To set all four borders, use the shorthand
@@ -565,7 +565,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderLeftWidth;
-    
+
 
     /**
      * Sets the width of an element's left border. To set all four borders, use the border-width
@@ -578,7 +578,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderRight;
-    
+
 
     /**
      * Shorthand property that defines the border-width, border-style and border-color of an
@@ -592,7 +592,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderRightColor;
-    
+
 
     /**
      * Sets the color of an element's right border. This page explains the border-right-color
@@ -606,7 +606,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderRightStyle;
-    
+
 
     /**
      * Sets the style of an element's right border. To set all four borders, use the shorthand
@@ -619,7 +619,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderRightWidth;
-    
+
 
     /**
      * Sets the width of an element's right border. To set all four borders, use the
@@ -631,7 +631,7 @@ public class CssProps extends JsPlainObj {
         return this;
     }
     @JsProperty public String borderSpacing;
-    
+
 
     /**
      * Specifies the distance between the borders of adjacent cells.
@@ -642,7 +642,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderStyle;
-    
+
 
     /**
      * Sets the style of an element's four borders. This property can have from one to four values.
@@ -655,7 +655,7 @@ public class CssProps extends JsPlainObj {
         return this;
     }
     @JsProperty public String borderTop;
-    
+
 
     /**
      * Shorthand property that defines the border-width, border-style and border-color of an
@@ -669,7 +669,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderTopColor;
-    
+
 
     /**
      * Sets the color of an element's top border. This page explains the border-top-color value,
@@ -683,7 +683,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderTopLeftRadius;
-    
+
 
     /**
      * Sets the rounding of the top-left corner of the element.
@@ -694,7 +694,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderTopRightRadius;
-    
+
 
     /**
      * Sets the rounding of the top-right corner of the element.
@@ -705,7 +705,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderTopStyle;
-    
+
 
     /**
      * Sets the style of an element's top border. To set all four borders, use the shorthand
@@ -718,7 +718,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderTopWidth;
-    
+
 
     /**
      * Sets the width of an element's top border. To set all four borders, use the shorthand
@@ -731,7 +731,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String borderWidth;
-    
+
 
     /**
      * Sets the width of an element's four borders. This property can have from one to four values.
@@ -744,7 +744,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String boxDecorationBreak;
-    
+
 
     /**
      * Breaks a box into fragments creating new borders, padding and repeating backgrounds or lets
@@ -756,7 +756,7 @@ public class CssProps extends JsPlainObj {
         return this;
     }
     @JsProperty public String boxLineProgression;
-    
+
 
     /**
      * Do not use. This property has been replaced by the flex-wrap property.
@@ -769,7 +769,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String boxLines;
-    
+
 
     /**
      * Do not use. This property has been replaced by the flex-wrap property.
@@ -782,7 +782,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String boxOrdinalGroup;
-    
+
 
     /**
      * Do not use. This property has been replaced by flex-order.
@@ -795,7 +795,7 @@ public class CssProps extends JsPlainObj {
         return this;
     }
     @JsProperty public String breakAfter;
-    
+
 
     /**
      * The CSS break-after property allows you to force a break on multi-column layouts. More
@@ -810,7 +810,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String breakBefore;
-    
+
 
     /**
      * Control page/column/region breaks that fall above a block of content
@@ -821,7 +821,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String breakInside;
-    
+
 
     /**
      * Control page/column/region breaks that fall within a block of content
@@ -832,7 +832,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String clear;
-    
+
 
     /**
      * The clear CSS property specifies if an element can be positioned next to or must be
@@ -844,7 +844,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String clipRule;
-    
+
 
     /**
      * Clipping crops an graphic, so that only a portion of the graphic is rendered, or filled.
@@ -856,7 +856,7 @@ public class CssProps extends JsPlainObj {
         return this;
     }
     @JsProperty public String color;
-    
+
 
     /**
      * The color property sets the color of an element's foreground content (usually text),
@@ -868,7 +868,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String columnFill;
-    
+
 
     /**
      * Specifies how to fill columns (balanced or sequential).
@@ -879,7 +879,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String columnGap;
-    
+
 
     /**
      * The column-gap property controls the width of the gap between columns in multi-column
@@ -891,7 +891,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String columnRule;
-    
+
 
     /**
      * Sets the width, style, and color of the rule between columns.
@@ -901,7 +901,7 @@ public class CssProps extends JsPlainObj {
         return this;
     }
     @JsProperty public String columnRuleColor;
-    
+
 
     /**
      * Specifies the color of the rule between columns.
@@ -912,7 +912,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String columnRuleWidth;
-    
+
 
     /**
      * Specifies the width of the rule between columns.
@@ -923,7 +923,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String columnSpan;
-    
+
 
     /**
      * The column-span CSS property makes it possible for an element to span across all columns
@@ -936,7 +936,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String columnWidth;
-    
+
 
     /**
      * Specifies the width of columns in multi-column elements.
@@ -947,7 +947,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String columns;
-    
+
 
     /**
      * This property is a shorthand property for setting column-width and/or column-count.
@@ -958,7 +958,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String counterIncrement;
-    
+
 
     /**
      * The counter-increment property accepts one or more names of counters (identifiers), each
@@ -984,7 +984,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String cue;
-    
+
 
     /**
      * The cue property specifies sound files (known as an "auditory icon") to be played by
@@ -999,7 +999,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String cueAfter;
-    
+
 
     /**
      * The cue-after property specifies a sound file (known as an "auditory icon") to be played
@@ -1013,7 +1013,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String direction;
-    
+
 
     /**
      * The direction CSS property specifies the text direction/writing direction. The rtl is
@@ -1025,7 +1025,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String display;
-    
+
 
     /**
      * This property specifies the type of rendering box used for an element. It is a shorthand
@@ -1037,7 +1037,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String fill;
-    
+
 
     /**
      * The "fill" property paints the interior of the given graphical element. The area to be
@@ -1052,7 +1052,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String fillRule;
-    
+
 
     /**
      * The "fill-rule" property indicates the algorithm which is to be used to determine what
@@ -1068,7 +1068,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String filter;
-    
+
 
     /**
      * Applies various image processing effects. This property is largely unsupported. See
@@ -1080,7 +1080,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String flexBasis;
-    
+
 
     /**
      * The flex-basis CSS property describes the initial main size of the flex item before any free
@@ -1093,7 +1093,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String flexDirection;
-    
+
 
     /**
      * The flex-direction CSS property describes how flex items are placed in the flex container,
@@ -1105,7 +1105,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String flexFlow;
-    
+
 
     /**
      * The flex-flow CSS property defines the flex container's main and cross axis. It is a
@@ -1117,7 +1117,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String flexItemAlign;
-    
+
 
     /**
      * Do not use. This property has been renamed to align-self
@@ -1130,7 +1130,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String flexOrder;
-    
+
 
     /**
      * Gets or sets a value that specifies the ordinal group that a flexbox element belongs to.
@@ -1156,7 +1156,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String flowFrom;
-    
+
 
     /**
      * Flows content from a named flow (specified by a corresponding flow-into) through selected
@@ -1168,7 +1168,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String font;
-    
+
 
     /**
      * The font property is shorthand that allows you to do one of two things: you can either set
@@ -1181,7 +1181,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String fontFamily;
-    
+
 
     /**
      * The font-family property allows one or more font family names and/or generic family names
@@ -1195,7 +1195,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String fontKerning;
-    
+
 
     /**
      * The font-kerning property allows contextual adjustment of inter-glyph spacing, i.e. the
@@ -1209,7 +1209,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String fontSizeAdjust;
-    
+
 
     /**
      * The font-size-adjust property adjusts the font-size of the fallback fonts defined with
@@ -1222,7 +1222,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String fontStretch;
-    
+
 
     /**
      * Allows you to expand or condense the widths for a normal, condensed, or expanded font face.
@@ -1233,7 +1233,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String fontStyle;
-    
+
 
     /**
      * The font-style property allows normal, italic, or oblique faces to be selected. Italic
@@ -1247,7 +1247,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String fontSynthesis;
-    
+
 
     /**
      * This value specifies whether the user agent is allowed to synthesize bold or oblique font
@@ -1259,7 +1259,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String fontVariant;
-    
+
 
     /**
      * The font-variant property enables you to select the small-caps font within a font family.
@@ -1270,7 +1270,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String fontVariantAlternates;
-    
+
 
     /**
      * Fonts can provide alternate glyphs in addition to default glyph for a character. This
@@ -1282,7 +1282,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String gridArea;
-    
+
 
     /**
      * Lays out one or more grid items bound by 4 grid lines. Shorthand for setting
@@ -1295,7 +1295,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String gridColumn;
-    
+
 
     /**
      * Controls a grid item's placement in a grid area, particularly grid position and a grid span.
@@ -1307,7 +1307,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String gridColumnEnd;
-    
+
 
     /**
      * Controls a grid item's placement in a grid area as well as grid position and a grid span.
@@ -1320,7 +1320,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String gridColumnStart;
-    
+
 
     /**
      * Determines a grid item's placement by specifying the starting grid lines of a grid item's
@@ -1333,7 +1333,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String gridRow;
-    
+
 
     /**
      * Gets or sets a value that indicates which row an element within a Grid should appear in.
@@ -1345,7 +1345,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String gridRowEnd;
-    
+
 
     /**
      * Determines a grid item's placement by specifying the block-end. A grid item's placement in
@@ -1359,7 +1359,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String gridRowPosition;
-    
+
 
     /**
      * Specifies a row position based upon an integer location, string value, or desired row size.
@@ -1371,7 +1371,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String gridRowSpan;
-    
+
 
     @JsOverlay public final CssProps gridRowSpan(String s) {
         gridRowSpan = s;
@@ -1379,7 +1379,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String gridTemplateAreas;
-    
+
 
     /**
      * Specifies named grid areas which are not associated with any particular grid item, but can
@@ -1393,7 +1393,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String gridTemplateColumns;
-    
+
 
     /**
      * Specifies (with grid-template-rows) the line names and track sizing functions of the grid.
@@ -1407,7 +1407,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String gridTemplateRows;
-    
+
 
     /**
      * Specifies (with grid-template-columns) the line names and track sizing functions of the
@@ -1421,7 +1421,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String height;
-    
+
 
     /**
      * Sets the height of an element. The content area of the element height does not include
@@ -1433,7 +1433,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String hyphenateLimitChars;
-    
+
 
     /**
      * Specifies the minimum number of characters in a hyphenated word
@@ -1444,7 +1444,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String hyphenateLimitLines;
-    
+
 
     /**
      * Indicates the maximum number of successive hyphenated lines in an element. The "no-limit"
@@ -1456,7 +1456,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String hyphenateLimitZone;
-    
+
 
     /**
      * Specifies the maximum amount of trailing whitespace (before justification) that may be
@@ -1469,7 +1469,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String hyphens;
-    
+
 
     /**
      * Specifies whether or not words in a sentence can be split by the use of a manual or
@@ -1481,7 +1481,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String imeMode;
-    
+
 
     @JsOverlay public final CssProps imeMode(String s) {
         imeMode = s;
@@ -1489,7 +1489,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String layoutGrid;
-    
+
 
     @JsOverlay public final CssProps layoutGrid(String s) {
         layoutGrid = s;
@@ -1497,7 +1497,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String layoutGridChar;
-    
+
 
     @JsOverlay public final CssProps layoutGridChar(String s) {
         layoutGridChar = s;
@@ -1505,7 +1505,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String layoutGridLine;
-    
+
 
     @JsOverlay public final CssProps layoutGridLine(String s) {
         layoutGridLine = s;
@@ -1513,7 +1513,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String layoutGridMode;
-    
+
 
     @JsOverlay public final CssProps layoutGridMode(String s) {
         layoutGridMode = s;
@@ -1521,7 +1521,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String layoutGridType;
-    
+
 
     @JsOverlay public final CssProps layoutGridType(String s) {
         layoutGridType = s;
@@ -1529,7 +1529,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String left;
-    
+
 
     /**
      * Sets the left edge of an element
@@ -1540,7 +1540,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String letterSpacing;
-    
+
 
     /**
      * The letter-spacing CSS property specifies the spacing behavior between text characters.
@@ -1551,7 +1551,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String listStyle;
-    
+
 
     /**
      * Shorthand property that sets the list-style-type, list-style-position and list-style-image
@@ -1563,7 +1563,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String listStyleImage;
-    
+
 
     /**
      * This property sets the image that will be used as the list item marker. When the image is
@@ -1577,7 +1577,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String listStylePosition;
-    
+
 
     /**
      * Specifies if the list-item markers should appear inside or outside the content flow.
@@ -1588,7 +1588,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String listStyleType;
-    
+
 
     /**
      * Specifies the type of list-item marker in a list.
@@ -1599,7 +1599,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String margin;
-    
+
 
     /**
      * The margin property is shorthand to allow you to set all four margins of an element at once.
@@ -1612,7 +1612,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String marginBottom;
-    
+
 
     /**
      * margin-bottom sets the bottom margin of an element.
@@ -1623,7 +1623,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String marginLeft;
-    
+
 
     /**
      * margin-left sets the left margin of an element.
@@ -1634,7 +1634,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String marginRight;
-    
+
 
     /**
      * margin-right sets the right margin of an element.
@@ -1645,7 +1645,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String marginTop;
-    
+
 
     /**
      * margin-top sets the top margin of an element.
@@ -1656,7 +1656,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String mask;
-    
+
 
     /**
      * This property is shorthand for setting mask-image, mask-mode, mask-repeat, mask-position,
@@ -1669,7 +1669,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String maskBorder;
-    
+
 
     /**
      * This property is shorthand for setting mask-border-source, mask-border-slice,
@@ -1682,7 +1682,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String maskBorderRepeat;
-    
+
 
     /**
      * This property specifies how the images for the sides and the middle part of the mask image
@@ -1696,7 +1696,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String maskBorderSlice;
-    
+
 
     /**
      * This property specifies inward offsets from the top, right, bottom, and left edges of the
@@ -1711,7 +1711,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String maskBorderSource;
-    
+
 
     /**
      * Specifies an image to be used as a mask. An image that is empty, fails to download, is
@@ -1723,7 +1723,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String maskBorderWidth;
-    
+
 
     /**
      * This property sets the width of the mask box image, similar to the CSS border-image-width
@@ -1735,7 +1735,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String maskClip;
-    
+
 
     /**
      * Determines the mask painting area, which defines the area that is affected by the mask.
@@ -1747,7 +1747,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String maskOrigin;
-    
+
 
     /**
      * For elements rendered as a single box, specifies the mask positioning area. For elements
@@ -1761,7 +1761,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String maxFontSize;
-    
+
 
     /**
      * This property must not be used. It is no longer included in any standard or standard track
@@ -1775,7 +1775,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String maxHeight;
-    
+
 
     /**
      * Sets the maximum height for an element. It prevents the height of the element to exceed
@@ -1788,7 +1788,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String maxWidth;
-    
+
 
     /**
      * Sets the maximum width for an element. It limits the width property to be larger than the
@@ -1800,7 +1800,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String minHeight;
-    
+
 
     /**
      * Sets the minimum height for an element. It prevents the height of the element to be
@@ -1813,7 +1813,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String minWidth;
-    
+
 
     /**
      * Sets the minimum width of an element. It limits the width property to be not smaller
@@ -1825,7 +1825,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String outline;
-    
+
 
     /**
      * The CSS outline property is a shorthand property for setting one or more of the
@@ -1844,7 +1844,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String outlineColor;
-    
+
 
     /**
      * The outline-color property sets the color of the outline of an element. An outline is a
@@ -1865,7 +1865,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String overflow;
-    
+
 
     /**
      * The overflow property controls how extra content exceeding the bounding box of an element
@@ -1878,7 +1878,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String overflowStyle;
-    
+
 
     /**
      * Specifies the preferred scrolling methods for elements that overflow.
@@ -1889,7 +1889,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String overflowX;
-    
+
 
     /**
      * The overflow-x property is a specific case of the generic overflow property. It controls
@@ -1901,7 +1901,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String padding;
-    
+
 
     /**
      * The padding optional CSS property sets the required padding space on one to four sides of
@@ -1917,7 +1917,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String paddingBottom;
-    
+
 
     /**
      * The padding-bottom CSS property of an element sets the padding space required on the
@@ -1931,7 +1931,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String paddingLeft;
-    
+
 
     /**
      * The padding-left CSS property of an element sets the padding space required on the left
@@ -1944,7 +1944,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String paddingRight;
-    
+
 
     /**
      * The padding-right CSS property of an element sets the padding space required on the right
@@ -1957,7 +1957,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String paddingTop;
-    
+
 
     /**
      * The padding-top CSS property of an element sets the padding space required on the top of
@@ -1970,7 +1970,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String pageBreakAfter;
-    
+
 
     /**
      * The page-break-after property is supported in all major browsers. With CSS3, page-break-*
@@ -1983,7 +1983,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String pageBreakBefore;
-    
+
 
     /**
      * The page-break-after property is supported in all major browsers. With CSS3, page-break-*
@@ -1996,7 +1996,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String pageBreakInside;
-    
+
 
     /**
      * Sets the page-breaking behavior inside an element. With CSS3, page-break-* properties
@@ -2009,7 +2009,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String pause;
-    
+
 
     /**
      * The pause property determines how long a speech media agent should pause before and after
@@ -2021,7 +2021,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String pauseAfter;
-    
+
 
     /**
      * The pause-after property determines how long a speech media agent should pause after
@@ -2034,7 +2034,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String pauseBefore;
-    
+
 
     /**
      * The pause-before property determines how long a speech media agent should pause before
@@ -2047,7 +2047,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String perspective;
-    
+
 
     /**
      * The perspective property defines how far an element is placed from the view on the
@@ -2069,7 +2069,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String perspectiveOrigin;
-    
+
 
     /**
      * The perspective-origin property establishes the origin for the perspective property. It
@@ -2093,7 +2093,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String pointerEvents;
-    
+
 
     /**
      * The pointer-events property allows you to control whether an element can be the target
@@ -2105,7 +2105,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String position;
-    
+
 
     /**
      * The position property controls the type of positioning used by an element within its
@@ -2118,7 +2118,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String quotes;
-    
+
 
     /**
      * Sets the type of quotation marks for embedded quotations.
@@ -2129,7 +2129,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String regionFragment;
-    
+
 
     /**
      * Controls whether the last region in a chain displays additional 'overset' content
@@ -2142,7 +2142,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String restAfter;
-    
+
 
     /**
      * The rest-after property determines how long a speech media agent should pause after
@@ -2155,7 +2155,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String restBefore;
-    
+
 
     /**
      * The rest-before property determines how long a speech media agent should pause after
@@ -2169,7 +2169,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String right;
-    
+
 
     /**
      * Specifies the position an element in relation to the right side of the containing element.
@@ -2180,21 +2180,21 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String rubyAlign;
-    
+
     @JsOverlay public final CssProps rubyAlign(String s) {
         rubyAlign = s;
         return this;
     }
 
     @JsProperty public String rubyPosition;
-    
+
     @JsOverlay public final CssProps rubyPosition(String s) {
         rubyPosition = s;
         return this;
     }
 
     @JsProperty public String shapeImageThreshold;
-    
+
 
     /**
      * Defines the alpha channel threshold used to extract a shape from an image. Can be thought
@@ -2207,7 +2207,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String shapeInside;
-    
+
 
     /**
      * A future level of CSS Shapes will define a shape-inside property, which will define a
@@ -2219,7 +2219,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String shapeMargin;
-    
+
 
     /**
      * Adds a margin to a shape-outside. In effect, defines a new shape that is the smallest
@@ -2235,7 +2235,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String shapeOutside;
-    
+
 
     /**
      * Declares a shape around which text should be wrapped, with possible modifications
@@ -2248,7 +2248,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String speak;
-    
+
 
     /**
      * The speak property determines whether or not a speech synthesizer will read aloud
@@ -2260,7 +2260,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String speakAs;
-    
+
 
     /**
      * The speak-as property determines how the speech synthesizer interprets the content:
@@ -2273,7 +2273,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String tabSize;
-    
+
 
     /**
      * The tab-size CSS property is used to customise the width of a tab (U+0009) character.
@@ -2284,7 +2284,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String tableLayout;
-    
+
 
     /**
      * The 'table-layout' property controls the algorithm used to lay out the table cells,
@@ -2296,7 +2296,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textAlign;
-    
+
 
     /**
      * The text-align CSS property describes how inline content like text is aligned in
@@ -2309,7 +2309,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textAlignLast;
-    
+
 
     /**
      * The text-align-last CSS property describes how the last line of a block element or
@@ -2321,7 +2321,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textDecoration;
-    
+
 
     /**
      * The text-decoration CSS property is used to set the text formatting to underline,
@@ -2335,7 +2335,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textDecorationColor;
-    
+
 
     /**
      * Sets the color of any text decoration, such as underlines, overlines, and strike throughs.
@@ -2346,7 +2346,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textDecorationLine;
-    
+
 
     /**
      * Sets what kind of line decorations are added to an element, such as underlines, overlines, etc.
@@ -2357,28 +2357,28 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textDecorationLineThrough;
-    
+
     @JsOverlay public final CssProps textDecorationLineThrough(String s) {
         textDecorationLineThrough = s;
         return this;
     }
 
     @JsProperty public String textDecorationNone;
-    
+
     @JsOverlay public final CssProps textDecorationNone(String s) {
         textDecorationNone = s;
         return this;
     }
 
     @JsProperty public String textDecorationOverline;
-    
+
     @JsOverlay public final CssProps textDecorationOverline(String s) {
         textDecorationOverline = s;
         return this;
     }
 
     @JsProperty public String textDecorationSkip;
-    
+
 
     /**
      * Specifies what parts of an element's content are skipped over when applying any text decoration.
@@ -2389,7 +2389,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textDecorationStyle;
-    
+
 
     /**
      * This property specifies the style of the text decoration line drawn on the specified element.
@@ -2401,14 +2401,14 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textDecorationUnderline;
-    
+
     @JsOverlay public final CssProps textDecorationUnderline(String s) {
         textDecorationUnderline = s;
         return this;
     }
 
     @JsProperty public String textEmphasis;
-    
+
 
     /**
      * The text-emphasis property will apply special emphasis marks to the elements text. Slightly
@@ -2422,7 +2422,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textEmphasisColor;
-    
+
 
     /**
      * The text-emphasis-color property specifies the foreground color of the emphasis marks.
@@ -2433,7 +2433,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textEmphasisStyle;
-    
+
 
     /**
      * The text-emphasis-style property applies special emphasis marks to an element's text.
@@ -2444,7 +2444,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textHeight;
-    
+
 
     /**
      * This property helps determine an inline box's block-progression dimension, derived from
@@ -2459,7 +2459,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textIndent;
-    
+
 
     /**
      * Specifies the amount of space horizontally that should be left on the first line of the
@@ -2472,28 +2472,28 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textJustifyTrim;
-    
+
     @JsOverlay public final CssProps textJustifyTrim(String s) {
         textJustifyTrim = s;
         return this;
     }
 
     @JsProperty public String justifyContent;
-    
+
     @JsOverlay public final CssProps justifyContent(String s) {
         justifyContent = s;
         return this;
     }
 
     @JsProperty public String textKashidaSpace;
-    
+
     @JsOverlay public final CssProps textKashidaSpace(String s) {
         textKashidaSpace = s;
         return this;
     }
 
     @JsProperty public String textLineThroughWidth;
-    
+
 
     /**
      * Specifies the line width for the line-through text decoration.
@@ -2504,11 +2504,11 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textOverflow;
-    
+
 
     /**
      * The text-overflow shorthand CSS property determines how overflowed content that is not
-     * displayed is signaled to the users. It can be clipped, display an ellipsis (HORIZONTAL ELLIPSIS) 
+     * displayed is signaled to the users. It can be clipped, display an ellipsis (HORIZONTAL ELLIPSIS)
      * or a Web author-defined string. It covers the two long-hand
      * properties text-overflow-mode and text-overflow-ellipsis
      */
@@ -2518,7 +2518,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textOverline;
-    
+
 
     /**
      * The text-overline property is the shorthand for the text-overline-style,
@@ -2530,7 +2530,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textOverlineColor;
-    
+
 
     /**
      * Specifies the line color for the overline text decoration.
@@ -2541,7 +2541,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textOverlineMode;
-    
+
 
     /**
      * Sets the mode for the overline text decoration, determining whether the text decoration
@@ -2553,7 +2553,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textOverlineStyle;
-    
+
 
     /**
      * Specifies the line style for overline text decoration.
@@ -2564,7 +2564,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textOverlineWidth;
-    
+
 
     /**
      * Specifies the line width for the overline text decoration.
@@ -2575,7 +2575,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textRendering;
-    
+
 
     /**
      * The text-rendering CSS property provides information to the browser about how to optimize
@@ -2587,7 +2587,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textShadow;
-    
+
 
     /**
      * The CSS text-shadow property applies one or more drop shadows to the text and
@@ -2600,7 +2600,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String textTransform;
-    
+
 
     /**
      * This property transforms text for styling purposes. (It has no effect on the underlying
@@ -2612,7 +2612,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String top;
-    
+
 
     /**
      * This property specifies how far an absolutely positioned box's top margin edge is offset
@@ -2626,7 +2626,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String touchAction;
-    
+
 
     /**
      * Determines whether touch input may trigger default behavior supplied by the user agent,
@@ -2638,7 +2638,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String transform;
-    
+
 
     /**
      * CSS transforms allow elements styled with CSS to be transformed in two-dimensional or
@@ -2651,7 +2651,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String transformOrigin;
-    
+
 
     /**
      * This property defines the origin of the transformation axes relative to the element to
@@ -2663,7 +2663,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String transformOriginZ;
-    
+
 
     /**
      * This property allows you to define the relative position of the origin of the transformation
@@ -2675,7 +2675,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String transformStyle;
-    
+
 
     /**
      * This property specifies how nested elements are rendered in 3D space relative to their parent.
@@ -2686,7 +2686,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String transition;
-    
+
 
     /**
      * The transition CSS property is a shorthand property for transition-property,
@@ -2699,7 +2699,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String transitionDelay;
-    
+
 
     /**
      * Defines when the transition will start. A value of "0s" means the transition will execute
@@ -2712,7 +2712,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String transitionDuration;
-    
+
 
     /**
      * The 'transition-duration' property specifies the length of time a transition animation
@@ -2724,7 +2724,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String transitionProperty;
-    
+
 
     /**
      * The 'transition-property' property specifies the name of the CSS property to which the
@@ -2736,7 +2736,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String transitionTimingFunction;
-    
+
 
     /**
      * Sets the pace of action within a transition
@@ -2751,14 +2751,14 @@ public class CssProps extends JsPlainObj {
      * bidirectional algorithm.
      */
     @JsProperty public String unicodeBidi;
-    
+
     @JsOverlay public final CssProps unicodeBidi(String s) {
         unicodeBidi = s;
         return this;
     }
 
     @JsProperty public String unicodeRange;
-    
+
 
     /**
      * unicode-range allows you to set a specific range of characters to be downloaded from a
@@ -2770,7 +2770,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String userFocus;
-    
+
 
     /**
      * This is for all the high level UX stuff.
@@ -2781,7 +2781,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String userInput;
-    
+
 
     /**
      * For inputing user content
@@ -2792,7 +2792,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String verticalAlign;
-    
+
 
     /**
      * The vertical-align property controls how inline elements or text are vertically aligned
@@ -2805,7 +2805,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String visibility;
-    
+
 
     /**
      * The visibility property specifies whether the boxes generated by an element are rendered.
@@ -2816,7 +2816,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String voiceBalance;
-    
+
 
     /**
      * The voice-balance property sets the apparent position (in stereo sound) of the synthesized
@@ -2828,7 +2828,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String voiceDuration;
-    
+
 
     /**
      * The voice-duration property allows the author to explicitly set the amount of time it should
@@ -2842,7 +2842,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String voiceFamily;
-    
+
 
     /**
      * The voice-family property sets the speaker's voice used by a speech media agent to read an
@@ -2858,7 +2858,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String voicePitch;
-    
+
 
     /**
      * The voice-pitch property sets pitch or tone (high or low) for the synthesized speech when
@@ -2871,7 +2871,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String voiceRange;
-    
+
 
     /**
      * The voice-range property determines how much variation in pitch or tone will be created by
@@ -2886,7 +2886,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String voiceRate;
-    
+
 
     /**
      * The voice-rate property sets the speed at which the voice synthesized by a speech media
@@ -2898,7 +2898,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String voiceStress;
-    
+
 
     /**
      * The voice-stress property sets the level of vocal emphasis to be used for synthesized
@@ -2910,7 +2910,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String voiceVolume;
-    
+
 
     /**
      * The voice-volume property sets the volume for spoken content in speech media. It replaces
@@ -2922,7 +2922,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String whiteSpace;
-    
+
 
     /**
      * The white-space property controls whether and how white space inside the element is
@@ -2934,7 +2934,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String width;
-    
+
 
     /**
      * Specifies the width of the content area of an element. The content area of the element
@@ -2946,7 +2946,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String wordBreak;
-    
+
 
     /**
      * The word-break property is often used when there is long generated content that is
@@ -2960,7 +2960,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String wordSpacing;
-    
+
 
     /**
      * The word-spacing CSS property specifies the spacing behavior between "words".
@@ -2971,7 +2971,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String wordWrap;
-    
+
 
     /**
      * An alias of css/properties/overflow-wrap, word-wrap defines whether to break words when
@@ -2983,7 +2983,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String wrapFlow;
-    
+
 
     /**
      * Specifies how exclusions affect inline content within block-level elements. Elements lay
@@ -2995,7 +2995,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String wrapMargin;
-    
+
 
     /**
      * Set the value that is used to offset the inner wrap shape from other shapes. Inline
@@ -3007,7 +3007,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String writingMode;
-    
+
 
     /**
      * writing-mode specifies if lines of text are laid out horizontally or vertically, and the
@@ -3037,7 +3037,7 @@ public class CssProps extends JsPlainObj {
     }
 
     @JsProperty public String cursor;
-    
+
     @JsOverlay public final CssProps cursor(String s) {
         cursor = s;
         return this;

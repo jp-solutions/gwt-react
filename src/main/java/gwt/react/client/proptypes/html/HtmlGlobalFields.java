@@ -1,5 +1,5 @@
 package gwt.react.client.proptypes.html;
-import gwt.interop.utils.client.plainobjects.JsPlainObj;
+import gwt.interop.utils.plainobjects.JsPlainObj;
 import gwt.react.client.events.*;
 import gwt.react.client.proptypes.BaseProps;
 import jsinterop.annotations.JsOverlay;
@@ -252,4 +252,7 @@ public class HtmlGlobalFields extends BaseProps {
     @JsProperty public UIEventHandler onScroll;
     // Wheel Events
     @JsProperty public WheelEventHandler onWheel;
+
+    @JsOverlay public final HtmlGlobalFields role(String s) { role = s; return this; }
+    @JsOverlay public final HtmlGlobalFields ariaLabel(String s) { set("aria-label", s); return this; }
 }

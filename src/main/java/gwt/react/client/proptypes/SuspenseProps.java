@@ -1,9 +1,12 @@
 package gwt.react.client.proptypes;
 
-import gwt.interop.utils.plainobjects.JsPlainObj;
+import gwt.react.client.elements.ReactElement;
 import jsinterop.annotations.JsPackage;
 import jsinterop.annotations.JsType;
 
 @JsType(isNative = true, namespace = JsPackage.GLOBAL, name="Object")
-public class BaseContext extends JsPlainObj {
+public class SuspenseProps extends BaseProps{
+
+    public ReactElement fallback;
+
 }

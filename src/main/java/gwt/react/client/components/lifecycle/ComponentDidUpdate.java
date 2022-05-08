@@ -21,7 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. */
 
-import gwt.interop.utils.client.plainobjects.JsPlainObj;
+import elemental2.core.JsObject;
 import gwt.react.client.components.Component;
 import gwt.react.client.components.PureComponent;
 import gwt.react.client.proptypes.BaseProps;
@@ -29,18 +29,18 @@ import jsinterop.annotations.JsMethod;
 import jsinterop.annotations.JsType;
 
 /**
- * Implement this interface when using {@link Component} or {@link PureComponent} to receive the {@link #componentDidUpdate(BaseProps, JsPlainObj)} lifecycle event.
+ * Implement this interface when using {@link Component} or {@link PureComponent} to receive the {@link #componentDidUpdate(BaseProps, JsObject)} lifecycle event.
  */
 @JsType
-public interface ComponentDidUpdate<P extends BaseProps, S extends JsPlainObj> {
+public interface ComponentDidUpdate<P extends BaseProps, S extends JsObject> {
 	/**
 	 * {@link #componentDidUpdate(P, S)} is invoked immediately after updating occurs. This method is not called for the initial render.
-	 * 
-	 * Use this as an opportunity to operate on the DOM when the component has been updated. This is also a good place to do network requests as long as 
+	 *
+	 * Use this as an opportunity to operate on the DOM when the component has been updated. This is also a good place to do network requests as long as
 	 * you compare the current props to previous props (e.g. a network request may not be necessary if the props have not changed).
-	 * 
-	 * Note: {@link #componentDidUpdate(P, S)} will not be invoked if {@link ShouldComponentUpdate#shouldComponentUpdate(BaseProps, JsPlainObj)} returns false.
-	 * 
+	 *
+	 * Note: {@link #componentDidUpdate(P, S)} will not be invoked if {@link ShouldComponentUpdate#shouldComponentUpdate(BaseProps, JsObject)} returns false.
+	 *
 	 * @param nextProps
 	 * @param nextState
 	 * @param snapshotValue
